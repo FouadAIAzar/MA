@@ -22,7 +22,18 @@
 \begin{document}
 \maketitle
 
-\section{2023-09-09}
-today has been nothing more than a mission to optimize the workflow. Firstly, a bash file was created that when executed creates
+\section{Activities for 09-09-2023}
+\subsection{Creation of a Bash Script}
+A new bash script was developed for the creation of a root directory to house the standard bioinformatics subdirectories. These subdirectories include \textit{bin}, \textit{src}, \textit{results}, \textit{doc}, and \textit{data}.
+
+\subsection{Development of a Python Script}
+A Python script was written with the primary function of sending prompts to OpenAI. These prompts are mainly in relation to code updates and potential research ideas. Notably, the responses from these prompts together with the prompts themselves are stored in a PSQL database and individual text files. This practice ensures that the GPT information is meticulously recorded, providing a digital timeline of when, why and how the data was utilized.
+
+\subsection{Data Storage}
+Photospectroscopic data and SMILES (Simplified Molecular Input Line Entry System) of chemical compounds were gathered into a CSV file named \textit{molecules.csv}. This file contains estimated data of about 25,000 rows and was stored in the \textit{data} subdirectory labelled with today's date.
+
+\subsection{Utilization of a Padel-Descriptor Python Script}
+A Python script using a Padel-Descriptor tool is currently running to extract around 2,000 fields of data for the purpose of neural network training. There is an ongoing consideration to relocate this script into Mojo.
+
 
 \end{document}
