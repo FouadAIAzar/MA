@@ -1,6 +1,6 @@
 import numpy as np
 
-# Activation function and its derivative
+# Activation functions and their derivatives
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
@@ -8,25 +8,40 @@ def sigmoid_derivative(x):
     s = sigmoid(x)
     return s * (1 - s)
 
-# Layer class
+def relu(x):
+    return np.maximum(0, x)
+
+def relu_derivative(x):
+    return np.where(x > 0, 1, 0)
+
 class Layer:
-    def __init__(self, input_size, output_size):
+    def __init__(self, input_size, output_size, activation='relu'):
         self.weights = np.random.randn(input_size, output_size) * 0.01
         self.biases = np.zeros((1, output_size))
         self.input = None
         self.dweights = None
         self.dbiases = None
 
+        # Choose activation function
+        if activation == 'sigmoid':
+            self.activation = sigmoid
+            self.activation_derivative = sigmoid_derivative
+        elif activation == 'relu':
+            self.activation = relu
+            self.activation_derivative = relu_derivative
+        else:
+            raise ValueError(f"Unsupported activation function: {activation}")
+
     def forward(self, x):
         self.input = x
-        return np.dot(x, self.weights) + self.biases
+        return self.activation(np.dot(x, self.weights) + self.biases)
 
     def backward(self, dvalues):
+        dvalues = dvalues * self.activation_derivative(np.dot(self.input, self.weights) + self.biases)
         self.dweights = np.dot(self.input.T, dvalues)
         self.dbiases = np.sum(dvalues, axis=0, keepdims=True)
         return np.dot(dvalues, self.weights.T)
 
-# Neural network class
 class NeuralNetwork:
     def __init__(self):
         self.layers = []
@@ -36,36 +51,33 @@ class NeuralNetwork:
 
     def predict(self, x):
         for layer in self.layers:
-            x = sigmoid(layer.forward(x))
+            x = layer.forward(x)
         return x
 
     def train(self, x, y, epochs, learning_rate):
         for epoch in range(epochs):
-            # Feedforward
             outputs = self.predict(x)
-
-            # Calculate Loss (Mean Squared Error)
             loss = ((outputs - y) ** 2).mean()
             print(f'Epoch {epoch + 1}, Loss: {loss:.4f}')
 
-            # Backpropagation
-            dvalues = 2 * (outputs - y) / outputs.shape[0] * sigmoid_derivative(outputs)
+            dvalues = 2 * (outputs - y) / outputs.shape[0]
             for layer in reversed(self.layers):
                 dvalues = layer.backward(dvalues)
-
-                # Update parameters
                 layer.weights -= learning_rate * layer.dweights
                 layer.biases -= learning_rate * layer.dbiases
 
 # Sample data
-x = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
-y = np.array([[0], [1], [1], [0]])
+x = np.random.randn(100, 1877)
+y = np.random.randn(100, 1)
 
-# Model definition and training
+# Define and train the neural network
 model = NeuralNetwork()
-model.add(Layer(2, 5))
-model.add(Layer(5, 1))
+model.add(Layer(1877, 512, activation='relu'))
+model.add(Layer(512, 256, activation='sigmoid'))
+model.add(Layer(256, 128, activation='relu'))
+model.add(Layer(128, 1, activation='relu'))  # linear output
 
-model.train(x, y, epochs=100000, learning_rate=5.0)
+model.train(x, y, epochs=1000, learning_rate=0.01)
 
 print("done")
+

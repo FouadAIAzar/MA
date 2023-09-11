@@ -35,5 +35,19 @@ Photospectroscopic data and SMILES (Simplified Molecular Input Line Entry System
 \subsection{Utilization of a Padel-Descriptor Python Script}
 A Python script using a Padel-Descriptor tool is currently running to extract around 2,000 fields of data for the purpose of neural network training. There is an ongoing consideration to relocate this script into Mojo.
 
+\section{Acitivities for 10-09-2023}
+\subsection*{Molecule Data Processing}
+After running \texttt{padel.py} overnight, \texttt{2000 lines} of \texttt{molecules.csv} were processed, but not all were successfully interpreted due to \textit{run time errors}. To remedy this issue, an instance of \texttt{EC2} in \texttt{AWS} was created. The associated \texttt{.pem} file is located in the \texttt{bin} directory together with an executable bash script that opens the \texttt{EC2} instance named \texttt{Flurine}.
+
+\subsection*{Mojo Exploration}
+Performed some experimental explorations with \texttt{Mojo}. Since it lacks a list functionality, creating a neural network from scratch seemed more to be an exercise in futility than a scientific endeavor. 
+
+\subsection*{Neural Network Class}
+Developed a simple, modular neural network class in Python. However, with a million epochs it's failing to train as an \textit{exor}. It prompts the question of whether to allow it to run for longer.  
+
+\subsection*{Master Thesis}
+The master thesis was successfully downloaded and stored under \verb|~/MA/results/thesis/legacy|. Utilizing \texttt{pdflatex} and \texttt{bibtex} to execute it produced no errors.
+
+
 
 \end{document}
