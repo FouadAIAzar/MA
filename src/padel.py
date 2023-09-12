@@ -35,6 +35,8 @@ if __name__ == '__main__':
     error_descriptors = []
 
     for index, smile in enumerate(smiles):
+        if index < 799:  # adjust this should you encounter another error
+            continue
         try:
             descriptor = padel(smile)
             descriptor['Tag'] = index + 1
@@ -42,11 +44,11 @@ if __name__ == '__main__':
             descriptors.append(descriptor)
             print(f"Processed index: {index}")
         except Exception as e:
-            print(f"Error processing SMILES string at index {index+1}: {smile}. Error: {e}")
+            print(f"Error processing SMILES string at index {index}: {smile}. Error: {e}")
             error_descriptors.append({"Tag": index + 1, "SMILES": smile, "Error": str(e)})
         
         # Save to file and clear cache every 1000 processed entries
-        if (index + 1) % 1000 == 0:
+        if (index + 1) % 50 == 0:
             save_to_csv(descriptors, f'{RES_PATH}/descriptors.csv', mode='a')
             descriptors.clear()
             print(f"Saved first {index+1} descriptors to file and cleared cache.")
