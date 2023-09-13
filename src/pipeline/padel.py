@@ -5,7 +5,7 @@ from util import load_environment_variables
 
 def padel(smiles_string):
     # Compute descriptors for the given SMILES string
-    return from_smiles(smiles_string, threads=10)
+    return from_smiles(smiles_string, time=30)
 
 def save_to_csv(descriptors, filepath, mode='w'):
     """Utility function to save descriptors to CSV."""

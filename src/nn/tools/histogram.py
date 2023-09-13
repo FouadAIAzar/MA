@@ -17,7 +17,7 @@ def calculate_bins(data):
 df = pd.read_csv('molecules.csv')
 
 # Extract the "emission max [nm]" column
-emission_max = df['Emission max (nm)']
+emission_max = df['Molecular weight (g mol-1)']
 
 # Calculate the number of bins
 num_bins = calculate_bins(emission_max)
@@ -25,9 +25,9 @@ num_bins = calculate_bins(emission_max)
 # Plot the histogram
 plt.hist(emission_max, bins=num_bins, edgecolor='black')
 
-title = 'Histogram of Emission Max'
+title = 'Histogram of Molecular Weight'
 # Customize the plot
-plt.xlabel('Emission Max [nm]')
+plt.xlabel('Molecular weight [g/mol]')
 plt.ylabel('Frequency')
 plt.title(title)
 plt.grid(True)
