@@ -24,12 +24,22 @@ emission_max <- df$`Emission max (nm)`
 num_bins <- calculate_bins(emission_max)
 
 # Plot the histogram
-plot_title <- 'Histogram of Emission Maxima'
+plot_title <- 'Histogram of Emission Max'
 
-ggplot(df, aes(x = emission_max)) + 
-  geom_histogram(binwidth = num_bins, fill = "blue", color = "black") +
-  labs(title = plot_title, x = 'Molecular weight [g/mol]', y = 'Frequency') + 
+plot <- ggplot(df, aes(x = emission_max)) + 
+  geom_histogram(bins = num_bins, fill = "blue", color = "black") +
+  labs(title = plot_title, x = 'Emission Max [nm]', y = 'Frequency') + 
   theme_minimal() +
-  theme(panel.grid.major = element_line(colour = "grey80")) +
-  ggsave(filename = paste0(plot_title, ".png"))
+  theme(panel.grid.major = element_line(colour = "grey80"))
+
+# Ensure the "figures" directory exists, if not create it
+if (!dir.exists("figures")) {
+  dir.create("figures")
+}
+
+# Save the plot in the "figures" directory
+ggsave(filename = paste0("figures/", plot_title, ".png"), plot = plot)
+
+# Display the plot
+print(plot)
 

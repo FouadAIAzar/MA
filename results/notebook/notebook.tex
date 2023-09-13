@@ -74,6 +74,26 @@ There could be faults in the architecture and choice of activation functions. Th
 Histograms were created to observe the distribution of emission maxima and molecular weights. However, I will be redoing all of this again when I have the complete dataset.
 
 \section*{Activities for 13-09-2023}
-Today's main goal is to develop a pipeline process for collecting data from a .csv file.
+\subsection*{Data Generation Pipeline}
+I have successfully created a pipeline for generating our training data. This simplifies the process, obviating the need for multiple scripts to prepare the data. The pipeline operates as follows:
+
+\begin{enumerate}
+    \item Extract descriptors without fingerprints from \texttt{molecules.csv}. This process is separated due to the intensive computational need which might take days using a simple laptop without a GPU. This creates a new file named \texttt{descriptors.csv}, which will be automatically duplicated into \texttt{descriptors\_backup.csv}. The current copy is located at \texttt{\~/MA/data/2023-09-10/}, while the \texttt{molecules.csv} is at \texttt{\~/MA/data/2023-09-09}.
+    
+    \item Append headers to \texttt{descriptor\_backup.csv}. This is due to a flaw with the \texttt{to\_csv} function from the library padelpy that doesn't export CSV files with headers. To execute this, you'll need \texttt{headers.csv} in the same directory as the script.
+    
+    \item Match the tags between the descriptors and molecules to identify which rows have been processed. This can be problematic because of padelpy's \texttt{from\_smiles} function's long runtime. My \texttt{padel.py} script has a try and catch so that the extraction for each smile goes uninterrupted. The output CSV will contain all the rows from descriptors plus the target "Emission max (nm)" from \texttt{molecules.csv}.
+    
+    \item Lastly, apply a mask to remove all NaN's. This is important in case there is a target output with no value. 
+\end{enumerate}
+
+All of these processes are located under \texttt{\~/MA/src/pipeline/main.py}.
+
+\subsection*{Neural Network Training}
+I have completed the first successful neural network training process. I used tensorflow to test if my hypothesis would yield a positive correlation between the predicted and experimental values of the emission maximum.
+
+\subsection*{Histograms}
+Finally, I created some histograms to visualise the distribution of emission maxima and molecular weight. However, these need to be updated again once the EC2 instance is done calculating the PaDEL descriptors.
+
 
 \end{document}
