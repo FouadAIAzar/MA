@@ -23,8 +23,8 @@ X_test_scaled = scaler.transform(X_test)
 
 # Build the neural network model
 model = tf.keras.models.Sequential([
-    tf.keras.layers.Dense(128, activation='relu', input_shape=(X_train_scaled.shape[1],)),
-    tf.keras.layers.Dense(128, activation='relu'),
+    tf.keras.layers.Dense(939, activation='relu', input_shape=(X_train_scaled.shape[1],)),
+    tf.keras.layers.Dense(470, activation='relu'),
     tf.keras.layers.Dense(1)  # Output layer with no activation (linear activation)
 ])
 
