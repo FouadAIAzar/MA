@@ -1,0 +1,5 @@
+This is not actually a citation, but more of a description where the data come from. This is extracted data intended to be used as a feature vector in a machine learning algo. More specifically, this data was generated using python wrapper for PaDEL known as PaDEL-Py with "~/MA/data/2023-09-09/molecules.csv" as its input. The source code can be found under ~/MA/src/pipeline/
+
+The pipeline is as follows:
+molecules -> descriptors_backup -> few more mediants -> train.csv
+
