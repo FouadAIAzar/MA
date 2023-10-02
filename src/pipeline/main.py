@@ -1,4 +1,4 @@
-# Define Paths
+#Define Paths
 import os
 from util import load_environment_variables
 
@@ -51,7 +51,7 @@ def main():
     molecules['Tag'] = molecules['Tag'].astype(str)
 
     # Perform an inner merge on 'Tag' to get matching rows
-    merged = pd.merge(descriptors_backup, molecules[['Tag', 'Absorption max (nm)']], on='Tag')
+    merged = pd.merge(descriptors_backup, molecules[['Tag', 'Emission max (nm)']], on='Tag')
 
     # Write the new dataframe to train.csv
     merged.to_csv('train_with_NaN.csv', index=False)
@@ -68,7 +68,7 @@ def main():
     df = df.dropna()
 
     # write back to csv
-    df.to_csv(f'{DAT_PATH}/2023-09-10/train_absorption.csv', index=False)
+    df.to_csv(f'{DAT_PATH}/2023-09-10/train.csv', index=False)
 
     print("3. Nans removed")
 
