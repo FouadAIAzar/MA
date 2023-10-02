@@ -95,5 +95,19 @@ I have completed the first successful neural network training process. I used te
 \subsection*{Histograms}
 Finally, I created some histograms to visualise the distribution of emission maxima and molecular weight. However, these need to be updated again once the EC2 instance is done calculating the PaDEL descriptors.
 
+\section*{Activities of 16-09-2023}
+This is the first section that I will be writting informally without the use of chatgpt. I had a meeting with good old Professor Jameson. In our conversation he was very impressed with the fact that my AI waws able to accurately predict the emission maxima. We tried talking about applications for this, and one of the few things he mentioned are:
+\begin{itemize}
+	\item If this kind of algorithm could predict photostability. I will need to do some research on how photostability is quantifiable at all
+	\item The application of this in probe (fluorophore) design would be perfec. Maybe the ability to reverse the process and provide the so called X's to the desired Y's. This kind of retrosythentic calculation may be difficult to conduct since we might have a many to one kind of sitation when we map Y $\rightarrow$ X.
+	\item Plotting the fluorescence spectra in accodirace with the solvents polarity? Adding some kind of elaborative explaination how the eviornment aka solvent affects the spectrum. My best bet is to probably split up the database into different solvents. amd train each network separately given the solvent might be smarter than training one database containing varying solvents.
+\end{itemize}
+One thing I would like to test today is if in general predictions can be made on the other photometric phenomena. 
 
+\section{Activities 2023-10-02}
+Professor David Jameson suggests addressing the issue of effects on the fluorescence spectrum. He implies that a machine learning algorithm detecting the fluorescence spectrum should consider utilizing the Padel descriptors of the solvent to fully determine the resulting fluorescence spectrum.
+
+I will conduct a test today to see if increasing the input of the feature vector to include a sort of "bias" for the solvent could make sense?
+
+I will run the NN model with a so-called additive method, where the padel descriptors are added to each other.
 \end{document}

@@ -7,7 +7,6 @@ import matplotlib.pyplot as plt
 
 # Read the CSV file
 data = pd.read_csv('train.csv')
-
 # Extract features (descriptors) and target (Emission max)
 X = data.drop(columns=['Tag', 'Name', 'Emission max (nm)'])
 y = data['Emission max (nm)']
@@ -52,7 +51,7 @@ y_pred = predicted
 plt.scatter(y_test, y_pred)
 plt.xlabel('Actual values')
 plt.ylabel('Predicted values')
-plt.title('Actual vs Predicted values')
+plt.title('Actual vs Predicted values [Emission]')
 plt.plot([min(y_test), max(y_test)], [min(y_test), max(y_test)], color='red')  # y=x line
 plt.show()
 
