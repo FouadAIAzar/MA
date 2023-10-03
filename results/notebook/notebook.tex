@@ -110,4 +110,9 @@ Professor David Jameson suggests addressing the issue of effects on the fluoresc
 I will conduct a test today to see if increasing the input of the feature vector to include a sort of "bias" for the solvent could make sense?
 
 I will run the NN model with a so-called additive method, where the padel descriptors are added to each other.
+
+\section{Activities 2023-10-03}
+My goal is to develop a system that identifies if a polypeptide chain contains aromatic amino acids to predict fluorescence. The process utilizes software packages to analyze these chains quantitatively, possibly qualitatively. Predictions on fluorescence emission maximum are made using a Multi-Layer Perceptron (MLP). I hypothesize that while the excitation spectrum remains constant, the excitation maximum could vary due to potential quenching factors. I am aware of the FPBase database, but need more samples to test my theory effectively.
+
+I'm still calculating the descriptors for everything, but to be honest I think I am to blame for why this process is taking so long. PadelPy is great on a small scale, but when you want to calculate descriptors for 10,000s of smile files, a better solution is needed.
 \end{document}
