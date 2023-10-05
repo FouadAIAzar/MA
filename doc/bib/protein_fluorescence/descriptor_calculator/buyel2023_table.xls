@@ -1,0 +1,556 @@
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="scrollable bordered" tabindex="0">
+      <thead>
+         <tr>
+            <th class="rowsep">Application</th>
+            <th class="rowsep">Tool name</th>
+            <th class="rowsep">Type of descriptors</th>
+            <th class="rowsep">Input format</th>
+            <th class="rowsep">Output</th>
+            <th class="rowsep">Software Type</th>
+            <th class="rowsep">Open access</th>
+            <th class="rowsep">Web address</th>
+            <th class="rowsep">Ref.</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>General</td>
+            <td>CDK</td>
+            <td>Topological, constitutional, geometric, electronic, hybrid descriptors,<br>fingerprints (ECFP, Daylight, MACCS, and others)</td>
+            <td>SMILES, SDF, InChI, MOL2, CML, and others</td>
+            <td>One or more values of varying types (Boolean, Double, Integer)</td>
+            <td>Java Library</td>
+            <td>yes</td>
+            <td>http://cdk.github.io</td>
+            <td>[50]</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>MOE</td>
+            <td>2d, 3d descriptors, topological, physical properties, structural keys</td>
+            <td>PDB, SDF, SMILES, and others</td>
+            <td>n.a.</td>
+            <td>Software</td>
+            <td>no</td>
+            <td>www.chemcomp.com</td>
+            <td>n.a.</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>PyDPI</td>
+            <td>Amino acid, di-, and tri-peptide composition, autocorrelation descriptors, CTD descriptors,
+               sequence order coupling, quasi-sequence order descriptors, pseudo amino acid composition,
+               descriptors, amphiphilic pseudo amino acid composition descriptors, conjoint triad
+               features</td>
+            <td>n.a.</td>
+            <td>Binary, integer and continuous scalars, group of scalars descriptors can be interpreted
+               as 1D, 2D, or 3D arrays* *</td>
+            <td>Python toolkit</td>
+            <td>yes</td>
+            <td>https://pypi.org/project/pydpi/#description</td>
+            <td>[51]</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>Rcpi</td>
+            <td>Amino acid composition, autocorrelation, CTD descriptors, quasi-sequence order, pseudo-amino
+               acid composition, PSSM profile, molecular descriptors (2D/3D), including constitutional,
+               topological, geometrical, electronic descriptors, molecular fingerprints (PCM, GO
+               similarity, sequence similarity)</td>
+            <td>SMILES, DF files, FASTA, PDB</td>
+            <td>n.a.</td>
+            <td>R package</td>
+            <td>yes</td>
+            <td>https://bioconductor.org/packages/release/bioc/vignettes/Rcpi/inst/doc/Rcpi.html; http://research.chem.psu.edu/pcjgroup/adapt.html</td>
+            <td>[52]</td>
+         </tr>
+         <tr>
+            <td>Small molecules</td>
+            <td>ADAPT 260 *</td>
+            <td>Topological, geometrical, electronic</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>ADMET predictor</td>
+            <td>Constitutional, functional group counts, topological, E-state, 3d descriptors, molecular
+               patterns, acid-base ionization, empirical estimates of quantum</td>
+            <td>SDF</td>
+            <td>n.a.</td>
+            <td>software</td>
+            <td>no</td>
+            <td>www.simulations-plus.com</td>
+            <td>n.a.</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>ADRIANA. Code</td>
+            <td>Constitutional, functional group counts, Lipinski rule-of-five, topological, E-state,
+               Moriguchi, Meylan flags, 3d descriptors, molecular patterns</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>software</td>
+            <td>no</td>
+            <td>http://www.akosgmbh.de/molnet/adriana.htm</td>
+            <td>n.a.</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>ALOGPS2.1 *</td>
+            <td>logP, logS</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>yes</td>
+            <td>www.vcclab.org</td>
+            <td>n.a.</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>BioChem</td>
+            <td>Constitution, topology, connectivity, kappa, estate, autocorrelation, molecular properties,
+               charge, moe-type descriptors</td>
+            <td>SMILES, SDF, SMI-file</td>
+            <td>Integer and continuous scalars, groups can be interpreted as arrays* *</td>
+            <td>Web-server</td>
+            <td>yes</td>
+            <td>http://biotriangle.scbdd.com</td>
+            <td>[53]</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>BlueDesc</td>
+            <td>Constitutional descriptors, topological descriptors, connectivity indices, 2d-autocorrelation,
+               topological charges indices, geometrical descriptors, WHIM descriptors, functional
+               groups, molecular properties</td>
+            <td>3D-structures</td>
+            <td>Integer and continuous scalars, groups can be interpreted as arrays* *</td>
+            <td>Java-Tool</td>
+            <td>yes</td>
+            <td>http://www.ra.cs.uni-tuebingen.de/software/bluedesc/welcome_e.html</td>
+            <td>n.a.</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>ChemDes</td>
+            <td>Molecular descriptors</td>
+            <td>SMILES, SDF, SMI-file</td>
+            <td>Integer and continuous scalars, groups can be interpreted as arrays* *</td>
+            <td>web-based platform</td>
+            <td>yes</td>
+            <td>www.scbdd.com/chemdes</td>
+            <td>[54]</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>Chemopy</td>
+            <td>Constitution, topology, connectivity, E-state, kappa, Basak, Burden, autocorrelation
+               (Moreau-Broto, Moran, Geary), charge, property, moe-type, geometric, CPSA, RDF, MoRSE,
+               WHIM, fingerprints</td>
+            <td>SMILES, MOL</td>
+            <td>Integer and continuous scalars, groups can be interpreted as arrays* *</td>
+            <td>Python Package</td>
+            <td>free</td>
+            <td>https://code.google.com/archive/p/pychem/downloads</td>
+            <td>[55]</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>CODESSA</td>
+            <td>Constitutional, topological geometrical, charge-related, semi-empirical, thermodynamical</td>
+            <td>n.a.</td>
+            <td>Numerical characteristics</td>
+            <td>Software</td>
+            <td>no</td>
+            <td>www.codessa-pro.com</td>
+            <td>n.a.</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>DRAGON</td>
+            <td>Constitutional, topological 2d- autocorrelations, geometrical, WHIM, GETAWAY, RDF,
+               functional groups, etc.</td>
+            <td>MDL, Sybyl, SMILES, CML, and others</td>
+            <td>Integer and continuous scalars, groups can be interpreted as arrays* *</td>
+            <td>Software</td>
+            <td>no</td>
+            <td>www.talete.mi.it</td>
+            <td>n.a.</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>E-DRAGON*</td>
+            <td>Molecular descriptors</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>Software</td>
+            <td>yes</td>
+            <td>www.vcclab.org/lab/edragon/</td>
+            <td>n.a.</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>JOELib</td>
+            <td>Counting, topological, geometrical properties</td>
+            <td>SMILES, SDF, CML, CTX, FLAT, MOL2, and others (PDB in progess)</td>
+            <td>n.a.</td>
+            <td>Java-Package</td>
+            <td>yes</td>
+            <td>http://www.ra.cs.uni-tuebingen.de/software/joelib/introduction.html</td>
+            <td>n.a.</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>KRAKENX</td>
+            <td>Quantum chemical, atomic charge-based, CPSA, EVA/EEVA, shape, geometry, topographical,
+               Coulomb matrix, graph energy</td>
+            <td>SDF</td>
+            <td>Integer and continuous scalars, groups can be interpreted as arrays* *, vectors, matrices</td>
+            <td>Software</td>
+            <td>yes</td>
+            <td>https://gitlab.com/vishsoft/krakenx</td>
+            <td>[56]</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>MODEL*</td>
+            <td>Molecular descriptors</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>Web-server</td>
+            <td>yes</td>
+            <td>http://jing.cz3.nus.edu.sg/cgi-bin/model/model.cgi</td>
+            <td>n.a.</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>MOLCONN-Z</td>
+            <td>Topological</td>
+            <td>SMILES, SDF, MOL2</td>
+            <td>Integer and continuous scalars, groups can be interpreted as arrays* *</td>
+            <td>Software</td>
+            <td>no</td>
+            <td>www.edusoft-lc.com/molconn</td>
+            <td>n.a.</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>MOLD2</td>
+            <td>1d, 2d</td>
+            <td>n.a.</td>
+            <td>Integer and continuous scalars, groups can be interpreted as arrays* *</td>
+            <td>Software</td>
+            <td>yes</td>
+            <td>https://www.fda.gov/science-research/bioinformatics-tools/mold2</td>
+            <td>[57]</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>MOLGEN-QSPR</td>
+            <td>Constitutional, topological, geometrical</td>
+            <td>SDF</td>
+            <td>n.a.</td>
+            <td>Software</td>
+            <td>no</td>
+            <td>www.molgen.molgenqspr.html</td>
+            <td>n.a.</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>Mordred</td>
+            <td>2d, 3d</td>
+            <td>SMILES, SDF</td>
+            <td>Integer and continuous scalars, boolean, groups can be interpreted as arrays* *</td>
+            <td>Python Package</td>
+            <td>yes</td>
+            <td>https://github.com/mordred-descriptor/mordred</td>
+            <td>[21]</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>OEChem TK</td>
+            <td>166-bit MACCS, LINGO, circular, path (Daylight-like)</td>
+            <td>FASTA, SMILES, PDB, andothers</td>
+            <td>n.a.</td>
+            <td>programming library</td>
+            <td>no</td>
+            <td>www.eyesopen.com</td>
+            <td>n.a.</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>OpenBabel</td>
+            <td>MOLPRINT2D, 166-bit MACCS, Daylight fingerprint (FP2), structural key fingerprints</td>
+            <td>SMILES, PDB, MOL2, CML., InChl, and other (84 formats)</td>
+            <td>Numerical and textual descriptors</td>
+            <td>Python Modul / Software</td>
+            <td>yes</td>
+            <td>www.openbabel.org</td>
+            <td>[58]</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>PADEL*</td>
+            <td>1d, 2d, 3d descriptors, molecular fingerprints</td>
+            <td>n.a.</td>
+            <td>1d, 2d, and 3d descriptors</td>
+            <td>n.a.</td>
+            <td>yes</td>
+            <td>www.padel.nus.edu.sg</td>
+            <td>[59]</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>PowerMV</td>
+            <td>Constitutional, atom pairs, fingerprints, BCUT</td>
+            <td>MDL, SDF</td>
+            <td>Bit strings, continuous, collections, and counts</td>
+            <td>Software</td>
+            <td>yes</td>
+            <td>www.niss.org/PowerMV</td>
+            <td>[60]</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>PreADMET</td>
+            <td>Constitutional, topological, geometrical, physicochemical, etc.</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>Web-server</td>
+            <td>yes</td>
+            <td>http://preadmet.bmdrc.org</td>
+            <td>n.a.</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>QikProp</td>
+            <td>Topological descriptors, Mopac Descriptors, QikProp</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>Software</td>
+            <td>no</td>
+            <td>https://www.schrodinger.com/products/qikprop</td>
+            <td>n.a.</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>QuBiLS‐MAS</td>
+            <td>Topological molecular descriptors based</td>
+            <td>MOL, SDF, MDL</td>
+            <td>Continuous scalars, groups can be interpreted as arrays* *</td>
+            <td>Software</td>
+            <td>yes</td>
+            <td>http://tomocomd.com/software/qubils-mas</td>
+            <td>[22]</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>RDKit</td>
+            <td>2d, 3d descriptors, fingerprints</td>
+            <td>SDF, MOL2, PDB, and others</td>
+            <td>Integer and continuous scalars, vectors, dict</td>
+            <td>Toolkit</td>
+            <td>yes</td>
+            <td>https://www.rdkit.org</td>
+            <td>n.a.</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>Sarchitect*</td>
+            <td>Constitutional, 2d, 3d</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>no</td>
+            <td>www.strandls.com/sarchitect/index.html</td>
+            <td>n.a.</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>VolSurf+</td>
+            <td>ADME relevant descriptors</td>
+            <td>n.a.</td>
+            <td>Quantitative numerical descriptors</td>
+            <td>Software</td>
+            <td>no</td>
+            <td>https://www.moldiscovery.com/software/vsplus/</td>
+            <td>n.a.</td>
+         </tr>
+         <tr>
+            <td>Protein</td>
+            <td>AAindex</td>
+            <td>No direct descriptor</td>
+            <td>n.a.</td>
+            <td>Integer and continuous scalars, group of scalars descriptors can be interpreted as
+               1d, 2d, or 3d arrays* *</td>
+            <td>Database of amino acid indices</td>
+            <td>yes</td>
+            <td>https://pypi.org/project/pydpi/#description</td>
+            <td>[61]</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>BioProt</td>
+            <td>Amino acid, di-, and tri-peptide composition, CTD descriptors, M-B, Moran, Geary autocorrelation,
+               conjoint triad features, quasi-sequence order descriptors, sequence order coupling
+               number, pseudo amino acid composition 1 / 2</td>
+            <td>raw aa sequence, FASTA</td>
+            <td>Integer and continuous scalars, group of scalars descriptors can be interpreted as
+               1d, 2d, or 3d arrays* *</td>
+            <td>Web-server</td>
+            <td>yes</td>
+            <td>http://biotriangle.scbdd.com</td>
+            <td>[53]</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>DescribePROT</td>
+            <td>Database of 13 complementary descriptors for 83 complete proteomes</td>
+            <td>n.a.</td>
+            <td>Binary, integer and continuous scalars, group of scalars can be interpreted as arrays* *</td>
+            <td>Database of descriptors</td>
+            <td>yes</td>
+            <td>http://biomine.cs.vcu.edu/servers/DESCRIBEPROT/main.php</td>
+            <td>[62]</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>iFeature</td>
+            <td>Amino acid composition, grouped amino acid composition, CTD descriptors, M-B, Moran,
+               Geary autocorrelation, conjoint triad, quasi-sequence-order, pseudo-amino acid composition,
+               PseKRAAC, AAindex, BLOSUM62, Z-scale</td>
+            <td>FASTA</td>
+            <td>n.a.</td>
+            <td>Python Package / Web-server</td>
+            <td>yes</td>
+            <td>https://ifeature.erc.monash.edu</td>
+            <td>[63]</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>MuLiMs-MCoMPAs*</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>yes</td>
+            <td>http://mumbailocalinference.net/MCoMPAS/MCoMPAS.html</td>
+            <td>[64]</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>ProFeat-SS*</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>yes</td>
+            <td>http://bidd.cz3.nus.edu.sg/software/ProFeat-SS/*</td>
+            <td>n.a.</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>PROFEAT*</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>yes</td>
+            <td>http://bidd.cz3.nus.edu.sg/software/PROFEAT/*</td>
+            <td>n.a.</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>ProPred*</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>yes</td>
+            <td>https://web.kuicr.kyoto-u.ac.jp/supp/propred/</td>
+            <td>n.a.</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>ProtDCal*</td>
+            <td>n.a.</td>
+            <td>PDB, FASTA</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>yes</td>
+            <td>https://webs.iiitd.edu.in/raghava/protdcal/</td>
+            <td>[65]</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>PROTEIN RECON*</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>n.a.</td>
+            <td>yes</td>
+            <td>http://bioinf.modares.ac.ir/software/protein-recon/</td>
+            <td>n.a.</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>Protparam</td>
+            <td>Molecular weight, theoretical pI, amino acid composition, atomic composition, extinction
+               coefficient, estimated half-life, instability index, aliphatic index, grand average
+               of hydropathicity (GRAVY)</td>
+            <td>raw aa sequence, Swiss-Prot/TrEMBL accession number (AC)</td>
+            <td>Integer and continuous scalars, group of scalars descriptors can be interpreted as
+               1d, 2d, or 3d arrays* *</td>
+            <td>Web-server</td>
+            <td>yes</td>
+            <td>https://web.expasy.org/protparam/</td>
+            <td>[66]</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>protr</td>
+            <td>Amino acid composition, grouped amino acid composition, CTD descriptors, M-B, Moran,
+               Geary autocorrelation, conjoint triad, sequence order coupling number, quasi-sequence-order,
+               pseudo-amino acid composition, amphiphilic pseudo-amino acid composition, pseudo amino
+               acid compositions</td>
+            <td>raw aa sequence, FASTA</td>
+            <td>Integer and continuous scalars, group of scalars descriptors can be interpreted as
+               1d, 2d, or 3d arrays* *</td>
+            <td>R Package</td>
+            <td>yes</td>
+            <td>https://nanx.app/protr/</td>
+            <td>[67]</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>PseAAC</td>
+            <td>n.a.</td>
+            <td>FASTA</td>
+            <td>Integer and continuous scalars, group of scalars descriptors can be interpreted as
+               1d, 2d, or 3d arrays* *</td>
+            <td>Web-server</td>
+            <td>yes</td>
+            <td>http://www.csbio.sjtu.edu.cn/bioinf/PseAAC/</td>
+            <td>[68]</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>PyBioMed (PyProtein)</td>
+            <td>Amino acid, di-, and tri-peptide composition, CTD descriptors, M-B, Moran, Geary autocorrelation,
+               conjoint triad features, quasi-sequence order descriptors, sequence order coupling
+               number, pseudo amino acid composition 1 / 2</td>
+            <td>PDB ID, UniprotID</td>
+            <td>Integer and continuous scalars, group of scalars descriptors can be interpreted as
+               1d, 2d, or 3d arrays* *</td>
+            <td>Python Package</td>
+            <td>yes</td>
+            <td>https://pybiomed.readthedocs.io/en/latest/</td>
+            <td>[69]</td>
+         </tr>
+      </tbody>
+   </table>
