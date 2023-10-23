@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 
 # Read the CSV file
 data = pd.read_csv('train.csv')
+
 # Extract features (descriptors) and target (Emission max)
 X = data.drop(columns=['Tag', 'Name', 'Emission max (nm)'])
 y = data['Emission max (nm)']
@@ -20,28 +21,35 @@ scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
-# Build the neural network model
+# Build the neural network model with Dropout layers
 model = tf.keras.models.Sequential([
     tf.keras.layers.Dense(939, activation='relu', input_shape=(X_train_scaled.shape[1],)),
+    tf.keras.layers.Dropout(0.5),
     tf.keras.layers.Dense(470, activation='relu'),
-    tf.keras.layers.Dense(1)  # Output layer with no activation (linear activation)
+    tf.keras.layers.Dropout(0.5),
+    tf.keras.layers.Dense(1)
 ])
 
 # Compile the model
 model.compile(loss='mean_squared_error', optimizer='adam')
 
-# Train the model
-model.fit(X_train_scaled, y_train, epochs=10000, batch_size=32, validation_split=0.2)
+# Implement Early Stopping
+early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=50, restore_best_weights=True)
+
+# Train the model with validation split and early stopping
+model.fit(X_train_scaled, y_train, epochs=1000, batch_size=32, validation_split=0.2, callbacks=[early_stopping])
 
 # Evaluate the model on the test set
 mse = model.evaluate(X_test_scaled, y_test)
 print("Mean Squared Error on test set:", mse)
 
+# Save the model before the figure
+model.save('model.h5')
+
 # Predict on new data (if needed)
-# Here, I'm keeping this part from the original code but be aware you'll likely need to preprocess the new data similarly to how you preprocessed 'train.csv'
 new_data = pd.read_csv('train.csv')
 X_new = new_data.drop(columns=['Tag', 'Name', 'Emission max (nm)'])
-X_new_scaled = scaler.transform(X_new)
+X_new_scaled = scaler.transform(X_test)
 predicted = model.predict(X_new_scaled)
 
 y_test = y
@@ -55,6 +63,6 @@ plt.title('Actual vs Predicted values [Emission]')
 plt.plot([min(y_test), max(y_test)], [min(y_test), max(y_test)], color='red')  # y=x line
 plt.show()
 
-# Save the model
+# Save the model before the figure
 model.save('model.h5')
 

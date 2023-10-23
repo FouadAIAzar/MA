@@ -26,7 +26,7 @@ def main():
         headers = list(csv.reader(headers_file))[0]
 
     # Open and read the descriptors backup csv file
-    with open(f'{DAT_PATH}/2023-09-10/descriptors_backup.csv', 'r') as descriptors_file:
+    with open(f'{DAT_PATH}/2023-10-10/descriptors.csv', 'r') as descriptors_file:
         descriptors = list(csv.reader(descriptors_file))
 
     # Combine headers and descriptors
