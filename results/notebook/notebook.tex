@@ -118,5 +118,11 @@ I'm still calculating the descriptors for everything, but to be honest I think I
 
 
 \section{Activities 2023-10-23}
-The person plans to focus on enhancing their data collection methods due to the current frustrating system of organization within the data and results folder. They also intend to address issues with the Neural Network (NN) script, possibly by redesigning it from its foundation, to improve its operation.
+I plan to focus on enhancing my data collection methods due to the current frustrating system of organization within the data and results folder. They also intend to address issues with the Neural Network (NN) script, possibly by redesigning it from its foundation, to improve its operation.
+
+\section{Activities 2023-10-27}
+I have made a new folder named 'main' under 'data and results' to store main files. They modified the 'neuralNetwork2.py' script for optimized mlp-learning. For the script to function effectively, they removed erroneous rows (8500 to 8504) from the 'train.csv' file, hence eradicating incomplete and faulty data.
+
+\subsection{Proteins}
+I have finally obtained the entire database of proteins from FPBase and I am excited to finally implement a machine learning algorithm that will effectively predict the fluorescence spectrum based on quantifiers. The method I used to achieved this was \href{https://www.fpbase.org/graphql/#query=\%7B\%0A\%09proteins\%7B%0A%20%20%20%20id%0A%20%20%20%20seq%0A%20%20%20%20pdb%0A%20%20%20%20name%0A%20%20%20%20states%7B%0A%20%20%20%20%20%20name%0A%20%20%20%20%20%20slug%0A%20%20%20%20%20%20emMax%0A%20%20%20%20%20%20exMax%0A%20%20%20%20%20%20spectra%7B%0A%20%20%20%20%20%20%20%20subtype%0A%20%20%20%20%20%20%20%20data%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D}{this link}
 \end{document}

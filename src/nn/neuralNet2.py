@@ -43,17 +43,14 @@ model.fit(X_train_scaled, y_train, epochs=1000, batch_size=32, validation_split=
 mse = model.evaluate(X_test_scaled, y_test)
 print("Mean Squared Error on test set:", mse)
 
-# Save the model before the figure
+# Save the model
 model.save('model.h5')
 
-# Predict on new data (if needed)
-new_data = pd.read_csv('train.csv')
-X_new = new_data.drop(columns=['Tag', 'Name', 'Emission max (nm)'])
-X_new_scaled = scaler.transform(X_test)
-predicted = model.predict(X_new_scaled)
+# If you have new data, predict using it
+# For demonstration purposes, I'm skipping this part
 
-y_test = y
-y_pred = predicted
+# Predict on test data (for visualization)
+y_pred = model.predict(X_test_scaled)
 
 # Plot actual vs. predicted values
 plt.scatter(y_test, y_pred)
@@ -62,7 +59,4 @@ plt.ylabel('Predicted values')
 plt.title('Actual vs Predicted values [Emission]')
 plt.plot([min(y_test), max(y_test)], [min(y_test), max(y_test)], color='red')  # y=x line
 plt.show()
-
-# Save the model before the figure
-model.save('model.h5')
 

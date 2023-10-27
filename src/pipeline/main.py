@@ -68,7 +68,7 @@ def main():
     df = df.dropna()
 
     # write back to csv
-    df.to_csv(f'{DAT_PATH}/2023-09-10/train.csv', index=False)
+    df.to_csv(f'{DAT_PATH}/2023-10-10/train.csv', index=False)
 
     print("3. Nans removed")
 
