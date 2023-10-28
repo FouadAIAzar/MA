@@ -124,5 +124,44 @@ I plan to focus on enhancing my data collection methods due to the current frust
 I have made a new folder named 'main' under 'data and results' to store main files. They modified the 'neuralNetwork2.py' script for optimized mlp-learning. For the script to function effectively, they removed erroneous rows (8500 to 8504) from the 'train.csv' file, hence eradicating incomplete and faulty data.
 
 \subsection{Proteins}
-I have finally obtained the entire database of proteins from FPBase and I am excited to finally implement a machine learning algorithm that will effectively predict the fluorescence spectrum based on quantifiers. The method I used to achieved this was \href{https://www.fpbase.org/graphql/#query=\%7B\%0A\%09proteins\%7B%0A%20%20%20%20id%0A%20%20%20%20seq%0A%20%20%20%20pdb%0A%20%20%20%20name%0A%20%20%20%20states%7B%0A%20%20%20%20%20%20name%0A%20%20%20%20%20%20slug%0A%20%20%20%20%20%20emMax%0A%20%20%20%20%20%20exMax%0A%20%20%20%20%20%20spectra%7B%0A%20%20%20%20%20%20%20%20subtype%0A%20%20%20%20%20%20%20%20data%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D}{this link}
+
+The provided Python script fetches protein data from the \href{https://www.fpbase.org/}{FPbase} using its GraphQL endpoint. Specifically, it retrieves information about various proteins and their respective states. Once fetched, this data is saved locally as a JSON file.
+
+\subsection{Functionality}
+
+The script performs the following steps:
+
+\begin{enumerate}
+    \item Defines a GraphQL query to fetch protein-related details such as ID, sequence, pdb, name, and states.
+    \item Sends a POST request to the FPbase GraphQL endpoint with the constructed query.
+    \item Upon a successful response, the fetched data is saved to a file named \texttt{proteins.json}.
+    \item If the request fails, an error message with the respective status code is displayed.
+\end{enumerate}
+
+\subsection{Implementation}
+
+Here's a brief snippet of the code:
+
+\begin{lstlisting}[language=Python]
+import requests
+import json
+
+GRAPHQL_URL = "https://www.fpbase.org/graphql/"
+# ... [GraphQL query definition] ...
+
+response = requests.post(GRAPHQL_URL, data=json.dumps({"query": graphql_query}), headers=headers)
+
+if response.status_code == 200:
+    with open('proteins.json', 'w') as file:
+        json.dump(data, file, indent=4)
+    print("Data saved to proteins.json!")
+else:
+    print("Failed to fetch data. Status code:", response.status_code)
+\end{lstlisting}
+
+In essence, the script serves as a bridge between the user and the FPbase database, simplifying the process of data retrieval and storage.
+
+\subsection{what now}
+The next steps will now have to be focusing on structering the data for machine learning. We will feed the the sequence into some protein structure descriptor and quantifier, and have it mapped to the intially just the emission spectrum.
+
 \end{document}
