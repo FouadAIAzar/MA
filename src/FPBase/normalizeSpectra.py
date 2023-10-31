@@ -47,4 +47,3 @@ for file in csv_files:
     merged_df.to_csv(output_filepath, index=False)
 
 print("Processing complete!")
-
