@@ -10,28 +10,35 @@ model = load_model("mlp_model.h5")
 # Read the main CSV file
 df_main = pd.read_csv("proteins_paac.csv")
 
-# Select a random row from the dataframe
-random_row = df_main.sample(n=1)
+# Create the figures directory if it doesn't exist
+if not os.path.exists("figures"):
+    os.makedirs("figures")
 
-# Extract the features and prepare them for prediction
-x_values = random_row.iloc[:, 2:].values  # Assuming id, seq are the first two columns
-x_values = x_values.astype(np.float32)
+# Iterate over all rows in the dataframe
+for index, row in df_main.iterrows():
 
-# Make a prediction using the model
-predicted_intensity = model.predict(x_values)
+    # Extract the features and prepare them for prediction
+    x_values = row[2:].values.reshape(1, -1)  # Assuming id, seq are the first two columns and reshape to match the model input shape
+    x_values = x_values.astype(np.float32)
 
-# Get the actual intensity values
-spectrum_file = os.path.join("adjusted_spectra", f"{random_row['id'].values[0]}_em.csv")
-df_spectrum = pd.read_csv(spectrum_file)
-actual_intensity = df_spectrum["Intensity"].values
+    # Make a prediction using the model
+    predicted_intensity = model.predict(x_values)
 
-# Plotting actual vs. predicted values
-plt.figure(figsize=(10, 6))
-plt.plot(actual_intensity, label="Actual")
-plt.plot(predicted_intensity[0], label="Predicted", linestyle="--")
-plt.legend()
-plt.title("Actual vs. Predicted Spectra")
-plt.xlabel("Wavelength Index")
-plt.ylabel("Intensity")
-plt.show()
+    # Get the actual intensity values
+    spectrum_file = os.path.join("adjusted_spectra", f"{row['id']}_em.csv")
+    df_spectrum = pd.read_csv(spectrum_file)
+    actual_intensity = df_spectrum["Intensity"].values
+
+    # Plotting actual vs. predicted values
+    plt.figure(figsize=(10, 6))
+    plt.plot(actual_intensity, label="Actual")
+    plt.plot(predicted_intensity[0], label="Predicted", linestyle="--")
+    plt.legend()
+    plt.title(f"Actual vs. Predicted Spectra for ID {row['id']}")
+    plt.xlabel("Wavelength Index")
+    plt.ylabel("Intensity")
+
+    # Save the figure
+    plt.savefig(os.path.join("figures", f"{row['id']}_comparison.png"))
+    plt.close()  # Close the current figure to free up memory
 

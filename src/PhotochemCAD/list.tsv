@@ -1,0 +1,331 @@
+id_	name
+A01	Benzene
+A02	Toluene
+A03	o-Xylene
+A04	m-Xylene
+A05	p-Xylene
+A06	Mesitylene
+A07	Pseudocumene
+A08	Hemimellitene
+A09	Prehnitene
+A10	Pival
+A11	Benzalazine
+A12	Benzonitrile
+A13	Benzoic acid
+A14	Anisole
+A15	Aniline
+A16	N,N-Dimethylaniline
+A17	Phenylacetone
+A18	Chlorobenzene
+A19	Iodobenzene
+A20	Nitrobenzene
+A21	Styrene
+A22	Phenylacetonitrile
+A23	1,4-Dichlorobenzene
+A24	Phenylglyoxal
+A25	Phenylboronic acid
+A26	Vanillin
+A27	3-Hydroxyacetophenone
+A28	p-Anisaldehyde
+A29	4-Methylacetophenone
+A30	Galaxolide
+A31	Terpineol
+A32	Phenylhydrazine
+A33	Tetrahydronaphthalene
+A34	N-Phenylphthalimide
+A35	Isosafrole
+A36	Benzophenone
+A37	4-Chloroacetophenone
+A38	Dethylmalonate
+A39	1,2,4,5-Tetrazine
+A40	Hexafluorobenzene
+A41	Furfural
+B01	Biphenyl
+B02	p-Terphenyl
+B03	p-Quaterphenyl
+B04	p-Quinquephenyl
+B05	1,3,5-Triphenylbenzene
+B06	Benzidine
+B07	N,N'-Dimethylbenzidine
+B08	3,3',5,5'-Tetramethylbenzidine
+B09	2,5-Diphenyloxazole (PPO)
+B10	1,4-Bis(phenyl-2-oxazolyl)benzene (POPOP)
+B11	1,2,3,4,5-Pentaphenyl-3-cyclopentadiene
+B12	rac-BINAP
+B13	(R)-BINOL
+C01	Naphthalene
+C02	Anthracene
+C03	Tetracene
+C04	Pentacene
+C05	Phenanthrene
+C06	Pyrene
+C07	Triphenylene
+C08	9,10-Diphenylanthracene
+C09	9,10-Bis(phenylethynyl)anthracene
+C10	Rubrene
+C11	1,8-Naphthalic anhydride
+C12	2-Aminonaphthalene
+C13	2,3-Diaminonaphthalene
+C14	8-Anilino-1-naphthalenesulfonic acid
+C15	1,4,5,8-Naphthalenetetracarboxylic dianhydride
+C16	Pyranine
+D01	1,2-Diphenylacetylene
+D02	cis-Stilbene
+D03	trans-Stilbene
+D04	1,4-Diphenylbutadiyne
+D05	1,4-Diphenylbutadiene
+D06	1,6-Diphenylhexatriene
+D07	4-Dimethylamino-4'-nitrostilbene
+D08	Curcumin
+D09	all trans-Retinal
+D10	Beta-carotene
+F01	L-Alanine
+F02	L-Phenylalanine
+F03	L-Tyrosine
+F04	L-Histidine
+F05	L-Tryptophan
+F06	Adenine
+F07	Guanine
+F08	Cytosine
+F09	Thymine
+F10	Uracil
+F11	2-Amino-4-methylpyrimidine
+F12	2,4-dihydroxy-6-methylpyrimidine
+F13	D-(-)-Salicin
+F14	Riboflavin
+F15	L-Ascorbic acid
+F16	DL-alpha-Tocopherol
+F17	Vitamin K1
+F18	Folic acid
+E01	Pyridine
+E02	Pyridine N-oxide
+E03	2-Acetylpyridine
+E04	4-Dimethylaminopyridine
+E05	4-(4-Nitrobenzyl)pyridine
+E06	1,3,5-Triazine
+E07	Phthalimide
+E08	2,2'-Bipyridine
+E09	4,4'-Bipyridine
+E10	Quinoline
+E11	8-Quinoline carboxylic acid
+E12	3-Quinoline carboxaldehyde
+E13	Benzothiazole
+E14	Benzotriazole
+E15	2-Methylbenzoxazole
+E16	Pyrrole
+E17	Pyrrole-2-carboxaldehyde
+E18	Thiazole Orange
+E19	Thioflavin T
+E20	Tris(2,2'-bipyridyl)ruthenium(II)
+E21	4-Chloro-7-nitrobenzofurazan
+E22	7-Benzylamino-4-nitrobenz-2-oxa-1,3-diazole
+E23	Carbostyril 124
+E24	Quinoline Yellow
+E25	2,3,5-Triphenyltetrazolium Chloride
+E26	Quinine sulfate
+G01	1,4-Benzoquinone
+G02	Hydroquinone
+G03	2,3,5,6-Tetrachloro-1,4-benzoquinone
+G04	Tetrachlorohydroquinone
+G05	2,3,5,6-Tetramethyl-1,4-benzoquinone
+G06	2,3-Dichloro-5,6-dicyano-1,4-benzoquinone
+G07	3,4,5,6-Tetrachloro-1,2-benzoquinone
+G08	2,5-Diphenyl-1,4-benzoquinone
+G09	2,5-Di-tert-butyl-1,4-benzoquinone
+G10	Tetracyanoethylene
+G11	7,7,8,8-Tetracyanoquinodimethane
+G12	1,4-Naphthoquinone
+G13	1,4-Naphthoquinone-2-sulfonic acid, Potassium salt
+G14	2,3-Dichloro-1,4-naphthoquinone
+G15	2-Methyl-1,4-naphthoquinone
+G16	9,10-Phenanthrenequinone
+G17	1,2-Naphthoquinone
+G18	1,2-Naphthoquinone-4-sulfonic acid, sodium salt
+G19	9,10-Anthraquinone
+G20	Alizarin
+G21	Alizarin Red S
+G22	1,4-Anthraquinone
+G23	5,12-Naphthacenequinone
+G24	6,13-Pentacenequinone
+H01	Coumarin
+H02	4-Hydroxycoumarin
+H03	7-Hydroxycoumarin
+H04	7-Hydroxy-4-(trifluoromethyl)coumarin
+H05	7-Methoxycoumarin-4-acetic acid
+H06	Coumarin 1
+H07	Coumarin 6
+H08	Coumarin 7
+H09	Coumarin 30
+H10	Coumarin 151
+H11	Coumarin 314
+H12	Coumarin 343
+H13	Calcein Blue
+H14	Urolithin B
+I01	Acridine
+I02	Proflavine hydrochloride
+I03	Acridine Orange
+I04	Acridine Yellow G
+I05	Acridone
+I06	Phenazine
+I07	Phenosafranin
+I08	Neutral Red
+I09	Janus Green B
+I10	Phenothiazine
+I11	Thionin
+I12	Methylene blue
+I13	Azure II
+I14	Toluidine Blue O
+I15	Phenoxathiin
+I16	Phenoxazine
+I17	Oxazine 1
+I18	Cresyl Violet perchlorate
+I19	Nile Red
+I20	Nile Blue
+I21	Oxazine 170
+J01	Azobenzene
+J02	Acid Red 2
+J03	Methyl Orange
+J04	Orange G
+J05	Orange II
+J06	Acid Red 88
+J07	Sudan I
+J08	Sudan II
+J09	Acid Violet 3
+J10	Acid Red 1
+J11	Acid Red 14
+J12	Acid Blue 92
+J13	Sudan III
+J14	Sudan IV
+J15	Acid Black 1
+J16	Ponceau S
+J17	Congo Red
+J18	Benzopurpurin 4B
+J19	Evans Blue
+K01	1,1'-Diethyl-2,2'-cyanine iodide
+K02	1,1'-Diethyl-2,2'-carbocyanine iodide
+K03	1,1'-Diethyl-2,2'-dicarbocyanine iodide
+K04	1,1'-Diethyl-4,4'-cyanine iodide
+K05	1,1'-Diethyl-4,4'-carbocyanine iodide
+K06	1,1'-Diethyl-4,4'-dicarbocyanine iodide
+K07	3,3'-Diethyloxacarbocyanine iodide
+K08	3,3'-Diethyloxadicarbocyanine iodide
+K09	3,3'-Diethyloxatricarbocyanine iodide
+K10	1,1'-Diethyl-3,3,3',3'-tetramethylindocarbocyanine Iodide
+K11	1,1'-Diethyl-3,3,3',3'-tetramethylindodicarbocyanine Iodide
+K12	1,1'-Diethyl-3,3,3',3'-tetramethylindotricarbocyanine Iodide
+K13	Indocyanine Green
+K14	3,3'-Diethylthiacarbocyanine iodide
+K15	3,3'-Diethylthiadicarbocyanine iodide
+K16	3,3'-Diethylthiatricarbocyanine iodide
+K17	Merocyanine 540
+K18	4-(dicyanomethylene)-2-methyl-6-(p-dimethylaminostyryl)-4H-pyran, [DCM]
+K19	Stains all
+L01	Auramine O
+L02	Malachite Green
+L03	Crystal Violet
+L04	p-Fuchsin
+L05	Methyl Violet
+L06	Methyl Green
+L07	Methyl Blue
+L08	Phenolphthalein
+L09	Phenol Red
+L10	Cresol Red
+L11	Thymol Blue
+M01	Perylene
+M02	Perylene, PMI
+M03	Perylene, PMI(OR)
+M04	Perylene, PMI(OR)3
+M05	Perylene, PDI
+N01	Fluorescein
+N02	2',7'-Dichlorofluorescein
+N03	3,4,5,6-Tetrachlorofluorescein
+N04	Eosin B
+N05	Eosin Y
+N06	Phloxine B
+N07	Erythrosine B
+N08	Rose bengal
+N09	Xantphos
+N10	Rhodamine 123
+N11	Rhodamine B
+N12	Sulforhodamine B
+N13	Rhodamine 6G
+N14	Rhodamine 101 inner salt
+N15	Sulforhodamine 101
+O01	Dansylglycine
+O02	Lucifer Yellow CH
+O03	Piroxicam
+O04	1,2,3,4,5-Pentamethylcyclopentadiene
+O05	Ethidium Bromide
+O06	4',6-Diamidino-2-phenylindole, [DAPI]
+O07	Hoechst 33258
+O08	Squarylium dye III
+O09	Ellagic Acid Dihydrate
+O10	Betalamic Acid
+O11	Betanin
+O12	Rutin trihydrate
+O13	Hesperidin
+Q01	H2P
+Q02	MgP
+Q03	ZnP
+Q04	H2OEP
+Q05	MgOEP
+Q06	CuOEP
+Q07	ZnOEP
+Q08	H2TPP
+Q09	MgTPP
+Q10	ZnTPP
+Q11	H2TMP
+Q12	MgTMP
+Q13	ZnTMP
+Q14	H2TTP
+Q15	(o-H2NPh)H2P
+Q16	(ODC)H2P
+Q17	C6F5-H2P
+Q18	N-Confused tetraphenylporphyrin
+Q19	H4TPP2+
+Q20	ZnTMP+
+Q21	Protoporphyrin IX dimethyl ester
+Q22	Hematin
+Q23	Tetrabenzoporphine
+Q24	H2TBP(CO2Bu)
+Q25	ZnTBP(CO2Bu)
+Q26	PdTBP(CO2Bu)
+Q27	H2TBP(CO2Me)Ph
+Q28	ZnTBP(CO2Me)Ph
+Q29	PdTBP(CO2Me)Ph
+Q30	ZnTCPH(CO2Me)Ph
+Q31	PdTCPH(CO2Me)Ph
+Q32	H2TBP(CO2Bu)Ph
+R01	Ph-Corrole
+R02	C6F5-Corrole
+R03	Sapphyrin
+R04	Bilirubin
+R05	Biliverdin dimethyl ester
+R06	Cyanocobalamin
+S01	H2Pc
+S02	MgPc
+S03	FePc
+S04	ZnPc
+S05	H2Pc(OBu)
+S06	H2Pc(tBu)
+S07	ZnPc(tBu)
+S08	H2Nc(OnBu)
+S09	H2Nc(tBu)
+S10	H2N4P(tBu)
+S11	Boron subphthalocyanine chloride
+T01	Chlorophyll a
+T02	Chlorophyll b
+T03	Pheophorbide a
+T04	Pyropheophorbide a
+T05	Pyropheophorbide a methyl ester
+T06	Chlorin e6
+T07	Purpurin 18
+T08	H2TPC
+T09	H2C-1
+T10	CuC-1
+T11	ZnC-1
+T12	H2COxo-1
+T13	MgCOxo-1
+T14	CuCOxo-1
+T15	ZnCOxo-1
+T16	Bacteriochlorophyll a
