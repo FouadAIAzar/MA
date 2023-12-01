@@ -1,44 +1,74 @@
-## FPbase Protein Data Fetcher
+GPT-4 Response:
+# Protein Fluorescence Predictor 2D: Preprocessing Pipeline
 
-This script fetches protein data from the FPbase GraphQL endpoint and saves the fetched data as a JSON file.
+## Overview
 
-### Quick Start
+This project involves a series of scripts designed to fetch, filter, and preprocess protein data from the FPbase. The end goal is to prepare the data for analysis, which includes machine learning tasks. Below, you will find descriptions for each script along with the expected outputs.
 
-1. Ensure you have the required Python libraries installed:
-```bash
-pip install requests
+## Prerequisites
+
+To run these scripts, you will need:
+
+- Python 3.11
+- R programming environment (for `6_rcpi.r`)
+- Required Python libraries: `requests`, `json`, `csv`, `os`, `pandas`
+- Required R packages: `Rcpi`
+
+## Script Descriptions
+
+### 1. `1_getFPBaseProteins.py`
+
+This script fetches protein data from the FPbase using a GraphQL API. It saves the fetched data as `proteins.json`.
+
+### 2. `2_removeNans.py`
+
+Takes `proteins.json` as input and removes entries with empty sequences or without 'EM' type spectra. The resulting filtered dataset is stored as `filtered_proteins.json`.
+
+### 3. `3_json2csv.py`
+
+Converts the filtered protein data (`filtered_proteins.json`) to a comma-separated value (CSV) format, creating `proteins_info.csv`. Augmenting this, it saves individual spectra data for each protein to separate CSV files within a `spectra/` directory.
+
+### 4. `4_cleanup.py`
+
+Performs cleanup operations on `proteins_info.csv`, focusing on correcting or removing cells that only contain "[]".
+
+### 5. `5_normalizeSpectra.py`
+
+Adjusts the spectra data files to have a uniform wavelength range, filling in missing wavelength values with zeroes. The adjusted spectra are stored in the `adjusted_spectra/` directory.
+
+### 6. `6_rcpi.r`
+
+Utilizes the `Rcpi` R package to extract the pseudo-amino acid composition (PAAC) of the protein sequences from `proteins_info.csv`, saving the results to `proteins_paac.csv`.
+
+### 7. `7_NN.py`
+
+(This file is mentioned in the list but not included in the details provided. As such, we can infer that this script is expected to construct or train a neural network model and save it as `mlp_model.h5`).
+
+## Usage
+
+To run the scripts, navigate to the folder containing them, and execute each one sequentially:
+
+```shell
+python3 1_getFPBaseProteins.py
+python3 2_removeNans.py
+python3 3_json2csv.py
+python3 4_cleanup.py
+python3 5_normalizeSpectra.py
+Rscript 6_rcpi.r
 ```
 
-2. Run the script:
-```bash
-python your_script_name.py
-```
-Replace `your_script_name.py` with the actual filename if it's different.
+Make sure to have the necessary Python and R dependencies installed in your environment.
 
-### How it works
+## Outputs
 
-1. A GraphQL query is defined to fetch:
-   - Protein details like ID, sequence, pdb, and name.
-   - Details about the states of these proteins, including the name, slug, emission max, excitation max, and spectra subtype and data.
+The scripts will output the following files:
 
-2. A POST request is sent to the FPbase GraphQL endpoint with the query.
+- `proteins.json`: Contains the raw protein data fetched from FPbase.
+- `filtered_proteins.json`: Contains the protein data after removing entries with NAN values.
+- `proteins_info.csv`: Contains processed protein data in CSV format.
+- `adjusted_spectra/`: Directory containing normalized spectra CSV files per protein.
+- `proteins_paac.csv`: Contains extracted feature sets derived from protein sequences using PAAC.
 
-3. Upon receiving a successful response (HTTP 200), the data is saved to a JSON file named `proteins.json`.
-
-4. If the request is not successful, the script prints out the status code and the response text.
-
-### Dependencies
-
-- `requests`: For sending HTTP requests.
-- `json`: For parsing and saving JSON data.
-
-### Note
-
-Ensure you have proper permissions and you adhere to the terms of service/use of FPbase when fetching data. The rate of requests and the amount of data fetched might be subject to limits as set by FPbase.
 
 ---
-
-### License
-
-Unless specified otherwise, this script is provided "as is" without any warranty. Use at your own risk. Consider mentioning the source or providing attribution if you use or adapt the script in your work.
 

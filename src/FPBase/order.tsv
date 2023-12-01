@@ -1,0 +1,8 @@
+script			output
+1_getFPBaseProteins.py	proteins.json
+2_removeNans.py		filtered_proteins.json
+3_json2csv		proteins_info.csv
+4_cleanup.py		proteins_info.csv
+5_normalizeSpectra.py	adjusted_spectra/
+6_rcpi.r		proteins_paac.csv
+7_NN.py			mlp_model.h5
