@@ -1,84 +1,52 @@
-#Define Paths
 import os
+import pandas as pd
 from util import load_environment_variables
 
-load_environment_variables()
-DAT_PATH = os.getenv("DAT")
-RES_PATH = os.getenv("RES")
+def chunk_merge(input_file, reference_df, chunksize=10000, merge_column='Tag'):
+    """
+    Function to merge large CSV in chunks.
+    """
+    # Create an empty dataframe to store merged chunks
+    merged_chunks = pd.DataFrame()
 
-# Import necessary libraries
-import csv
-import pandas as pd
-import numpy as np
+    # Process chunks
+    for chunk in pd.read_csv(input_file, chunksize=chunksize):
+        chunk[merge_column] = chunk[merge_column].astype(str)
+        merged_chunk = pd.merge(chunk, reference_df, on=merge_column)
+        merged_chunks = pd.concat([merged_chunks, merged_chunk], ignore_index=True)
+
+    return merged_chunks
 
 def main():
-    '''
-    0. PaDEL Calculations
-    
-    This step is conducted outside of main for the simple fact that for a very large dataset, it will take days to compute.
-    '''
-    
-    '''
-    1. APPEND HEADERS
-    ''' 
-    # Open and read the headers csv file
-    with open('headers.csv', 'r') as headers_file:         
-        headers = list(csv.reader(headers_file))[0]
+    load_environment_variables()
+    DAT_PATH = os.getenv("DAT")
+    RES_PATH = os.getenv("RES")
 
-    # Open and read the descriptors backup csv file
-    with open(f'{DAT_PATH}/2023-10-10/descriptors.csv', 'r') as descriptors_file:
-        descriptors = list(csv.reader(descriptors_file))
-
-    # Combine headers and descriptors
-    combined = [headers] + descriptors
-
-    # Write the combined list back to the descriptors backup csv file
-    with open('descriptors_headers.csv', 'w', newline='') as combined_file:
-        writer = csv.writer(combined_file)
-        writer.writerows(combined)
-
+    # 1. Append Headers
+    headers = pd.read_csv('header.csv', header=None).values.flatten().tolist()
+    descriptors = pd.read_csv(f'{DAT_PATH}/main/descriptors.csv', header=None)
+    descriptors.columns = headers
+    descriptors.to_csv('descriptors_headers.csv', index=False)
     print("1. Headers Appended: Complete")
-    
-    '''
-    2. MERGE INPUT WITH OUTPUT
-    '''
-    # Read in CSV files
-    descriptors_backup = pd.read_csv('descriptors_headers.csv')
-    molecules = pd.read_csv(f'{DAT_PATH}/2023-09-09/molecules.csv')
 
-    # Ensure that 'Tag' column is of type string for proper comparison
-    descriptors_backup['Tag'] = descriptors_backup['Tag'].astype(str)
+    # 2. Merge Input with Output (in chunks)
+    molecules = pd.read_csv(f'{DAT_PATH}/main/molecules.csv')
     molecules['Tag'] = molecules['Tag'].astype(str)
-
-    # Perform an inner merge on 'Tag' to get matching rows
-    merged = pd.merge(descriptors_backup, molecules[['Tag', 'Emission max (nm)']], on='Tag')
-
-    # Write the new dataframe to train.csv
+    merged = chunk_merge('descriptors_headers.csv', molecules[['Tag', 'Emission max (nm)']])
     merged.to_csv('train_with_NaN.csv', index=False)
-
     print("2. Merger Complete")
 
-    '''
-    3. REMOVE NANS
-    '''
-    # read the csv file
+    # 3. Remove NaNs
     df = pd.read_csv('train_with_NaN.csv')
-
-    # remove the rows with NaN values
     df = df.dropna()
+    df.to_csv(f'{DAT_PATH}/main/train.csv', index=False)
+    print("3. NaNs removed")
 
-    # write back to csv
-    df.to_csv(f'{DAT_PATH}/2023-10-10/train.csv', index=False)
-
-    print("3. Nans removed")
-
-    '''
-    4. REMOVE TEMPORARY FILES
-    '''
-    
-    # os.remove(filename)
-    
-    # print("4. remove temporary files")
+    # 4. Remove Temporary Files (optional)
+    # os.remove('descriptors_headers.csv')
+    # os.remove('train_with_NaN.csv')
+    # print("4. Temporary files removed")
 
 if __name__ == "__main__":
     main()
+

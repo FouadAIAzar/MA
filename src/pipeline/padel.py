@@ -1,14 +1,11 @@
-import os
 from padelpy import from_smiles
 import pandas as pd
-from util import load_environment_variables
 
 def padel(smiles_string):
     # Compute descriptors for the given SMILES string
-    return from_smiles(smiles_string, time=30)
+    return from_smiles(smiles_string, fingerprints=True, timeout=60, threads = 2)
 
 def save_to_csv(descriptors, filepath, mode='w'):
-    """Utility function to save descriptors to CSV."""
     df = pd.DataFrame(descriptors)
 
     # Arrange columns
@@ -19,24 +16,19 @@ def save_to_csv(descriptors, filepath, mode='w'):
     df.to_csv(filepath, mode=mode, header=(mode == 'w'), index=False)
 
 if __name__ == '__main__':
-    # Load environment variables
-    load_environment_variables()
-
-    # Retrieve paths from environment variables
-    DAT_PATH = os.getenv("DAT")
-    RES_PATH = os.getenv("RES")
-
     # Extract SMILES string from 'Chromophore' column from the CSV file at DAT_PATH
-    data = pd.read_csv(f'{DAT_PATH}/2023-09-09/molecules.csv')
+    data = pd.read_csv(f'../../data/main/molecules.csv')
     smiles = data['Chromophore'].tolist()
+
+    # Start processing at index 2000
+    start_index = 0
+    smiles = smiles[start_index:]
 
     # Create empty lists for descriptors and errors
     descriptors = []
     error_descriptors = []
 
-    for index, smile in enumerate(smiles):
-        if index < 799:  # adjust this should you encounter another error
-            continue
+    for index, smile in enumerate(smiles, start=start_index):
         try:
             descriptor = padel(smile)
             descriptor['Tag'] = index + 1
@@ -47,14 +39,14 @@ if __name__ == '__main__':
             print(f"Error processing SMILES string at index {index}: {smile}. Error: {e}")
             error_descriptors.append({"Tag": index + 1, "SMILES": smile, "Error": str(e)})
         
-        # Save to file and clear cache every 1000 processed entries
-        if (index + 1) % 50 == 0:
-            save_to_csv(descriptors, f'{RES_PATH}/descriptors.csv', mode='a')
+        # Save to file and clear cache every 50 processed entries
+        if (index + 1) % 10 == 0:
+            save_to_csv(descriptors, f'descriptors_head.csv', mode='a')
             descriptors.clear()
             print(f"Saved first {index+1} descriptors to file and cleared cache.")
 
     # Save any remaining descriptors and errors
     if descriptors:
-        save_to_csv(descriptors, f'{RES_PATH}/descriptors.csv', mode='a')
+        save_to_csv(descriptors, f'descriptors.csv', mode='a')
     if error_descriptors:
-        pd.DataFrame(error_descriptors).to_csv(f'{RES_PATH}/error_descriptors.csv', index=False)
+        pd.DataFrame(error_descriptors).to_csv(f'error_descriptors.csv', index=False)

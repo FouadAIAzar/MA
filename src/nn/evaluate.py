@@ -4,12 +4,24 @@ import matplotlib.pyplot as plt
 from tensorflow.keras.models import load_model
 from sklearn.metrics import mean_absolute_error
 from sklearn.preprocessing import StandardScaler
+# from tensorflow.keras.utils import plot_model  # Uncomment if you want to plot the model structure
 
-# Load the pre-trained model
-model = load_model('model.h5')
+# Ask the user to enter the model file path
+model_path = input("Please enter the model file path you want to evaluate: ")
 
-# Load the data from train.csv
-data = pd.read_csv('train.csv')
+try:
+    # Load the pre-trained model
+    model = load_model(model_path)
+except Exception as e:
+    print(f"Error loading model: {e}")
+    exit()
+
+try:
+    # Load the data from test.csv
+    data = pd.read_csv('test.csv')
+except FileNotFoundError:
+    print("The file 'test.csv' was not found.")
+    exit()
 
 # Extract the input features and the output label
 X = data.drop(columns=['Tag', 'Name', 'Emission max (nm)'])
@@ -20,15 +32,18 @@ scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
 # Evaluate the model using the scaled data
-evaluation = model.evaluate(X_scaled, y)
-if isinstance(evaluation, list):
-    loss = evaluation[0]
-    accuracy = evaluation[1]
-    print(f'Loss: {loss}')
-    print(f'Accuracy: {accuracy}')
-else:
-    loss = evaluation
-    print(f'Loss: {loss}')
+try:
+    evaluation = model.evaluate(X_scaled, y)
+    if isinstance(evaluation, list):
+        loss = evaluation[0]
+        accuracy = evaluation[1]
+        print(f'Loss: {loss}')
+        print(f'Accuracy: {accuracy}')
+    else:
+        loss = evaluation
+        print(f'Loss: {loss}')
+except Exception as e:
+    print(f"Error during model evaluation: {e}")
 
 # Predict using the model on scaled data
 y_pred = model.predict(X_scaled)
