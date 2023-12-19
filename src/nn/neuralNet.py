@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 
 # Read the CSV file
-data = pd.read_csv('complete_set.csv')
+data = pd.read_csv('train.csv')
 
 # Extract features (descriptors) and target (Emission max)
 X = data.drop(columns=['Tag', 'Name', 'Emission max (nm)'])

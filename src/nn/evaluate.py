@@ -1,13 +1,16 @@
 import pandas as pd
 import numpy as np
+import os
 import matplotlib.pyplot as plt
 from tensorflow.keras.models import load_model
 from sklearn.metrics import mean_absolute_error
 from sklearn.preprocessing import StandardScaler
-# from tensorflow.keras.utils import plot_model  # Uncomment if you want to plot the model structure
 
-# Ask the user to enter the model file path
-model_path = input("Please enter the model file path you want to evaluate: ")
+# Ask the user to enter the folder path
+folder_path = input("Please enter the folder path: ")
+
+# Construct the model file path
+model_path = os.path.join(folder_path, "model.h5")
 
 try:
     # Load the pre-trained model
@@ -16,9 +19,12 @@ except Exception as e:
     print(f"Error loading model: {e}")
     exit()
 
+# Construct the test file path
+test_file_path = os.path.join(folder_path, "test.csv")
+
 try:
     # Load the data from test.csv
-    data = pd.read_csv('test.csv')
+    data = pd.read_csv(test_file_path)
 except FileNotFoundError:
     print("The file 'test.csv' was not found.")
     exit()
@@ -52,14 +58,21 @@ y_pred = model.predict(X_scaled)
 mae = mean_absolute_error(y, y_pred)
 print(f'Mean Absolute Error: {mae}')
 
+# Write performance information to a text file
+performance_file_path = os.path.join(folder_path, 'performance.txt')
+with open(performance_file_path, 'w') as file:
+    file.write(f'Loss: {loss}\n')
+    file.write(f'Mean Absolute Error: {mae}\n')
+
 # Plot actual vs. predicted values
 plt.figure(figsize=(10, 6))
 plt.scatter(y, y_pred, alpha=0.5)
 plt.title('Actual vs. Predicted Values')
 plt.xlabel('Actual Values')
 plt.ylabel('Predicted Values')
-plt.plot([min(y), max(y)], [min(y), max(y)], color='red')  # Diagonal line
-plt.show()
+plt.plot([min(y), max(y)], [min(y), max(y)], color='red')  
+plt.savefig(os.path.join(folder_path, 'actual_vs_predicted.png'))  
+plt.close()
 
 # Histogram of residuals
 residuals = y - y_pred.reshape(-1)
@@ -68,5 +81,5 @@ plt.hist(residuals, bins=50, alpha=0.75)
 plt.title('Histogram of Residuals')
 plt.xlabel('Residual Value')
 plt.ylabel('Frequency')
-plt.show()
-
+plt.savefig(os.path.join(folder_path, 'residuals_histogram.png')) 
+plt.close()
