@@ -1,0 +1,1 @@
+COC1=C(C=C(C=C1)C2=CN=C(O2)C3=CC=[N+](C=C3)CC4=CC(=CC=C4)C(=O)ON5C(=O)CCC5=O)S(=O)(=O)[O-]

@@ -1,0 +1,1 @@
+CN(CCCC(=O)O)C1=CC=C(C=C1)N=NC2=CC(=C(C=C2OC)N=NC3=CC=C(C=C3)[N+](=O)[O-])OC

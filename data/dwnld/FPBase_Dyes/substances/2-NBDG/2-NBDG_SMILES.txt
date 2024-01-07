@@ -1,0 +1,1 @@
+C1=C(C2=NON=C2C(=C1)[N+](=O)[O-])NC(C=O)C(C(C(CO)O)O)O

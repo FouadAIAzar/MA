@@ -1,0 +1,1 @@
+CN1C2=CC=CC=C2SC1=CC3=CC=[N+](C=C3)CCC[N+](C)(C)CCC[N+](C)(C)CCC[N+]4=CC=C(C=C4)C=C5N(C6=CC=CC=C6S5)C.[I-].[I-].[I-].[I-]

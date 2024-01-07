@@ -1,0 +1,1 @@
+[H+].CC1CC(NC2=C(C3=C(C=C12)C(=C4C=C5C(CC(N=C5C(=C4O3)S(=O)(=O)[O-])(C)C)C)C6=C(C(=C(C(=C6Cl)SCC(=O)NCCCCCC(=O)ON7C(=O)CCC7=O)Cl)Cl)C(=O)O)S(=O)(=O)[O-])(C)C.[Na+]

@@ -1,0 +1,703 @@
+BODIPY 493/503
+BODIPY 500_510
+BODIPY 558/568 C12
+BODIPY 581_591
+BODIPY 630_650
+BODIPY 650_665
+BODIPY FL
+BODIPY R6G
+BODIPY TMR
+BODIPY TR
+BactoView Dead 500/515
+BactoView Dead 560/570
+BactoView Dead 570/585
+BactoView Dead 600/615
+BactoView Dead 655/670
+BactoView Dead 690/710
+BactoView Dead 760/780
+BactoView Live Green
+BactoView Live Red
+BeRST1
+Brilliant Violet 421
+Brilliant Violet 480
+Brilliant Violet 510
+Brilliant Violet 570
+Brilliant Violet 605
+Brilliant Violet 650
+Brilliant Violet 711
+Brilliant Violet 750
+Brilliant Violet 785
+C Nuc In-Situ Seq (635 nm Excitation)
+CAL Fluor Orange 560
+CAL Fluor Red 590
+CAL Fluor Red 610
+CAL Fluor Red 635
+CF 405m
+CF 583R
+CF 597R
+CF350
+CF405L
+CF405M
+CF405S
+CF410
+CF430
+CF440
+CF450
+CF488A
+CF500
+CF503R
+CF505
+CF514
+CF532
+CF535ST
+CF540
+CF543
+CF550R
+CF555
+CF568
+CF570
+CF575
+CF583
+CF583R
+CF594
+CF594ST
+CF597R
+CF620R
+CF633
+CF640R
+CF647
+CF647Plus
+CF650
+CF660C
+CF660R
+CF680
+CF680R
+CF680T
+CF700
+CF750
+CF754 Tyramide
+CF770
+CF770T
+CF790
+CF800
+CF820
+CF850
+CF870
+CFSE (fluorescein, CFDA, SE)
+Calcein AM
+Calcein AM (calcein, calcein green)
+Calcein Blue AM (calcein blue)
+Calcein Violet 450 AM
+Calcium Crimson (calcium bound)
+Calcium Green
+Calcium Orange
+Calcium Sensor Dye eFluor 514
+Calcofluor M2R
+Cascade Blue
+Cascade Yellow
+Cell Mask green
+Cell Proliferation Dye eFluor 450
+Cell Proliferation Dye eFluor 670
+CellBrite Blue
+CellBrite Cytoplasmic Membrane Green
+CellBrite Fix 488
+CellBrite Fix 555
+CellBrite Fix 640
+CellBrite Green
+CellBrite NIR 680
+CellBrite NIR 750
+CellBrite NIR 770
+CellBrite NIR 790
+CellBrite Orange
+CellBrite Red
+CellBrite Steady 405
+CellBrite Steady 488
+CellBrite Steady 550
+CellBrite Steady 650
+CellBrite Steady 685
+CellEvent Green
+CellEvent Senescence Green
+CellMask Deep Red plasma membrane stain
+CellMask Orange plasma membrane stain
+CellROX Green
+CellROX Orange
+CellTrace Blue
+CellTrace Far Red
+CellTrace Violet stain
+CellTrace Yellow
+CellTrace calcein red-orange
+CellTrace calcein violet
+CellTracker Deep Red
+CellTracker Green CMFDA
+CellTracker Red CMTPX
+CellTracker Violet BMQC
+CellTracker� Green CMFDA Dye
+CellTracker� Orange CMRA Dye
+Chlorophyll a
+Chlorophyll b
+Chrimson eyeballed from nmeth.2836
+Chronos (opsin)
+CoraFluor-1
+Cospheric UVPMS-BG
+Cospheric UVPMS-BR
+Coumarin 6
+Cresyl Violet perchlorate
+Cy3
+Cy3.5
+Cy3B
+Cy3B-NHS
+Cy5
+Cy5.5
+Cy5.5-Allophycocyanin (APC)
+Cy5B
+Cy7
+CyQuant
+CyTRAK Orange
+Cytophase Violet
+DAF-FM
+DAPI
+DCF
+DDAO
+DMAO
+DRAQ5
+DRAQ7
+DY-480XL
+DY-481XL
+DY-485XL
+DY-634
+DY-XL510
+DY-XL511
+DY-XL520
+DY-XL521
+DY-XL601
+Dabcyl
+Dansyl
+Dapoxyl
+Di-2-ANEPEQ (JPW 1114)
+Di-3-ANEPPDHQ
+Di-4-ANEPPDHQ
+Di-4-ANEPPS
+Di-8-ANEPPS
+DiA
+DiD
+DiFMU (pH 3.0)
+DiFMU (pH 9.0)
+DiI
+DiO
+DiR
+Dibromobimane (bBBr)
+Dihydroethidium
+Dojindo Nucleolus Bright Red
+DyLight 405
+DyLight 488
+DyLight 549
+DyLight 550
+DyLight 554
+DyLight 633
+DyLight 649
+DyLight 680
+DyLight 755
+DyeCycle Green
+DyeCycle Orange
+DyeCycle Violet
+ELF 97
+EQ1
+EQ2
+ER-Tracker Blue-White DPX
+ERseeing
+Eosin
+Epoxide hydrolase substrate
+Erythrosine B
+Ethidium Bromide
+Ethidium Homodimer
+Ethidium Homodimer I
+Ethidium Homodimer III
+Europium
+EvaGreen
+EvaGreen Plus
+EvaRuby
+ExoBrite 410/450
+ExoBrite 490/515
+ExoBrite 560/585
+ExoBrite 640/660
+ExoBrite 650/665
+ExoBrite 655/670
+FAM
+FM 1-43
+FM 2-10
+FM 5-95
+Filipin
+FilmTracer calcein red-orange
+FilmTracer calcein violet
+Fixable Viability Dye eFluor 450
+Fixable Viability Dye eFluor 455UV
+Fixable Viability Dye eFluor 506
+Fixable Viability Dye eFluor 520
+Fixable Viability Dye eFluor 660
+Fixable Viability Dye eFluor 780
+FlAsH
+Flash Phalloidin Green 488
+Flash Phalloidin NIR 647
+Flash Phalloidin Red 594
+Flipper-TR
+Fluo-3
+Fluo-3 (calcium bound)
+Fluo-4
+Fluo-4, Calcium Bound
+FluoSpheres Red
+FluoSpheres blue (365/415)
+FluoSpheres blue fluorescent microspheres
+FluoSpheres crimson fluorescent microspheres
+FluoSpheres dark red fluorescent microspheres
+FluoSpheres nile red fluorescent microspheres
+FluoSpheres orange fluorescent microspheres
+FluoSpheres red fluorescent microspheres
+FluoSpheres yellow-green
+FluoSpheres yellow-green fluorescent microspheres
+Fluorescein (FITC)
+FluoroMyelin Red
+FluxOR Red
+FluxOR thallium indicator
+Fm 4-64
+FocalCheck Blue Ring Stain
+FocalCheck Dark Red Ring Stain
+FocalCheck DoubleGreen Ring Stain
+FocalCheck DoubleOrange Ring Stain
+FocalCheck Orange Ring Stain
+Fura Red (calcium bound)
+Fura Red (calcium free)
+Fura-2 (calcium bound)
+Fura-2 (calcium free)
+FxCycle Far Red stain
+FxCycle Violet
+G Nuc In-Situ Seq (540 nm Excitation)
+G Nucleotide In-Situ Sequencing (540 nm Excitation)
+GelGreen
+GelRed
+HADA
+HBC485
+HBC497
+HBC525
+HBC599
+HBC620
+HBTN
+HBTN (aq)
+HBTN-poc (aq)
+HBTP (aq)
+HBTPQ (aq)
+HCS CellMask Blue stain
+HCS CellMask Deep Red stain
+HCS CellMask Green stain
+HCS CellMask Orange stain
+HCS CellMask Red stain
+HCS LipidTOX Deep Red
+HCS LipidTOX Green Neutral Lipid
+HCS LipidTOX Green phospholipidosis reagent
+HCS LipidTOX Red Neutral Lipid
+HCS LipidTOX Red phospholipidosis reagent
+HCS NuclearMask Blue stain
+HCS NuclearMask Deep Red
+HCS NuclearMask Red stain
+HEX
+HPF
+Helix NP Blue
+Helix NP Green
+Helix NP NIR
+Hoechst 33258
+Hoechst 33342
+Hoechst 34580
+HyPer-3
+IRDye QC-1
+Image-iT DEAD Green viability stain
+Image-iT Lipid Peroxidation Sensor
+Indo-1 (calcium bound)
+Indo-1 (calcium free)
+Indocyanine Green
+JC-1
+JOE
+JOJO-1
+Janelia Fluor JF479-HaloTag conjugate
+Janelia Fluor JF503-HaloTag conjugate
+Janelia Fluor JF525-HaloTag conjugate
+Janelia Fluor JF526-HaloTag conjugate
+Janelia Fluor JF549-HaloTag conjugate
+Janelia Fluor JF552-HaloTag conjugate
+Janelia Fluor JF559-HaloTag conjugate
+Janelia Fluor JF570-HaloTag conjugate
+Janelia Fluor JF585-HaloTag conjugate
+Janelia Fluor JF608-HaloTag conjugate
+Janelia Fluor JF635-HaloTag conjugate
+Janelia Fluor JF646-HaloTag conjugate
+Janelia Fluor JF669-HaloTag conjugate
+Janelia Fluor JF711-HaloTag conjugate
+Janelia Fluor JF722-HaloTag conjugate
+Janelia Fluor JF724-HaloTag conjugate
+Janelia Fluor JFX554-HaloTag conjugate
+Janelia Fluor JFX612-HaloTag conjugate
+Janelia Fluor JFX650-HaloTag conjugate
+Kiravia Blue 520
+L-Anap
+L-tryptophan
+LD540
+LDS 751
+LIVE/DEAD Fixable Aqua
+LIVE/DEAD Fixable Blue
+LIVE/DEAD Fixable Far Red
+LIVE/DEAD Fixable Green
+LIVE/DEAD Fixable Near-IR
+LIVE/DEAD Fixable Red
+LIVE/DEAD Fixable Violet
+LIVE/DEAD Fixable Yellow
+LIVE_DEAD Fixable Aqua Dead Cell Stain
+LIVE_DEAD Fixable Blue Dead Cell Stain
+LIVE_DEAD Fixable Far Red Dead Cell Stain
+LIVE_DEAD Fixable Green Dead Cell Stain
+LIVE_DEAD Fixable Near-IR Dead Cell Stain
+LIVE_DEAD Fixable Red Dead Cell Stain
+LIVE_DEAD Fixable Violet Dead Cell Stain
+LIVE_DEAD Fixable Yellow Dead Cell Stain
+Lipi-Blue
+LipidSpot 488
+LipidSpot 610
+Live-or-Dye 330/410
+Live-or-Dye 350/448
+Live-or-Dye 375/600
+Live-or-Dye 405/452
+Live-or-Dye 405/545
+Live-or-Dye 488/515
+Live-or-Dye 510/550
+Live-or-Dye 568/583
+Live-or-Dye 594/614
+Live-or-Dye 615/740
+Live-or-Dye 640/662
+Live-or-Dye 665/685
+Live-or-Dye 750/777
+Live-or-Dye 787/808
+Live-or-Dye NucFix Red
+Lucifer Yellow
+Luminicell Tracker LCTC 540
+Luminicell Tracker LCTC 670
+LysoSensor Blue
+LysoSensor Green
+LysoSensor Yellow_Blue (pH 3.0)
+LysoSensor Yellow_Blue (pH 9)
+LysoTracker Blue
+LysoTracker Green
+LysoTracker Red
+LysoTracker Red DND-99
+LysoTracker Yellow HCK-123
+LysoView 405
+LysoView 488
+LysoView 540
+LysoView 550
+LysoView 594
+LysoView 633
+LysoView 640
+LysoView 680
+Lysotracker Deep Red
+Mag-fura-2
+Magnesium Green
+Malachite green
+Marina Blue
+MemBrite Fix 405/430
+MemBrite Fix 488/515
+MemBrite Fix 543/560
+MemBrite Fix 568/580
+MemBrite Fix 594/615
+MemBrite Fix 640/660
+MemBrite Fix 660/680
+MemBrite Fix 680/700
+MemBrite Fix-ST 650/665
+MemBrite Fix-ST 667/685
+MemBrite Fix-ST 681/698
+MemBrite Fix-ST 755/777
+Methyl Green
+MitoBlue
+MitoHealth stain
+MitoSOX Red
+MitoSpy Green FM
+MitoSpy NIR DiIC1(5)
+MitoSpy Orange CMTMRos
+MitoSpy Red CMXRos
+MitoTracker Deep Red FM
+MitoTracker Green FM
+MitoTracker Orange
+MitoTracker Red
+MitoTracker Red FM
+MitoView 405
+MitoView 633
+MitoView 650
+MitoView 720
+MitoView Fix 640
+MitoView Green
+Monobromobimane (mBBr)
+Monochlorobimane (mBCI)
+Monodansylpentane
+NADA-Green
+NADH
+NBD
+Naphthofluorescein
+Neuro-DiO
+NeuroTrace 435_455 blue fluorescent Nissl stain
+NeuroTrace 515_535 yellow fluorescent Nissl stain
+NeuroTrace 530_615 red fluorescent Nissl stain
+NeuroTrace 640_660 deep-red fluorescent Nissl stain
+Nile Red
+Nile blue
+Nile red (phospholipid)
+Nile red (triglyceride)
+NorthernLights-557
+NovaBlue 510
+NovaBlue 530
+NovaBlue 555
+NovaBlue 610 / 30S
+PE (R-PE / R-phycoerythrin)
+PE-Alexa Fluor 610
+PE-Alexa Fluor 680
+PE-Alexa Fluor 700
+PE-CF594
+PE-Cy5
+PE-Cy5.5
+PE-Cy7
+PE-Texas Red
+PE-eFluor 610
+PE/Dazzle 594
+PE/Fire 780
+PKMITO Deep Red
+PKMITO Orange
+PKMITO Red
+PMA
+PMAxx
+PO-PRO-1
+PO-PRO-3
+POPO-1
+POPO-3
+Pacific Blue
+Pacific Green
+Pacific Orange
+PerCP
+PerCP-Cy5.5
+PerCP-eFluor 710
+PicoGreen reagent
+Premo Cameleon Calcium Sensor (calcium bound)
+Premo Cameleon Calcium Sensor (calcium free)
+PrestoBlue
+Pro-Q Diamond
+Pro-Q Emerald 300
+Propidium Iodide
+Propidium iodide (PI)
+Pyranine
+Pyranine (pH=1)
+Pyranine (pH=12)
+Pyranine (pH=2)
+Pyrene
+Pyridine 2 - Radiant Dyes
+Pyridine 2 - Sirah
+QSY 21
+QSY 35
+QSY 7
+QSY 9
+QXL 570
+QXL 670
+Qdot 525
+Qdot 545
+Qdot 565
+Qdot 585
+Qdot 605
+Qdot 625
+Qdot 655
+Qdot 705
+Qdot 800
+Qnuclear Deep Red stain
+Quasar 570
+Quasar 670
+Quasar 705
+RADA
+RH 795
+RH414
+ROX (carboxy-X-rhodamine)
+RPE-Astral616
+RPE-CF647T
+ReAsH
+RedDot1
+RedDot2
+Resazurin
+Resorufin
+Rhod-2 (calcium bound)
+Rhod-5N (calcium bound)
+Rhodamine 110
+Rhodamine 123
+Rhodamine 6G
+Rhodamine B
+Rhodamine Green
+Rhodamine Red
+Riboflavin
+SBFI (sodium bound)
+SBFI (sodium free)
+SNAP-Cell 647-SiR
+SNAP-Cell TMR-Star
+SNAP-SiR 647
+SNARF 1 @ pH 6
+SNARF 1 @ pH 9
+SPY505
+SPY555
+SPY595
+SPY620
+SPY650
+SPY700
+SYBR 14
+SYBR Gold
+SYBR Green
+SYBR Safe
+SYPRO Orange protein gel stain
+SYPRO Ruby protein gel stain
+SYTO 11
+SYTO 13
+SYTO 14
+SYTO 16
+SYTO 17
+SYTO 40
+SYTO 41
+SYTO 42
+SYTO 43
+SYTO 44
+SYTO 45
+SYTO 59
+SYTO 60
+SYTO 61
+SYTO 62
+SYTO 80
+SYTO 81
+SYTO 82
+SYTO 83
+SYTO 84
+SYTO 85
+SYTO 9
+SYTO Deep Red Nucleic Acid Stain
+SYTO RNASelect
+SYTOX AADvanced dead cell stain
+SYTOX Blue
+SYTOX Green
+SYTOX Orange
+SYTOX Red
+SeTau-405-NHS
+SeTau-425-NHS
+SeTau-488-NHS
+SeTau-647-NHS
+SeTau-665-NHS
+SeTau-670-NHS
+SeTau-680-NHS
+Seta-646
+Seta-650-NHS
+Seta-APC-705
+Seta-APC-780
+Seta-PE-615
+Seta-PE-670
+Seta-PE-775
+Seta-PerCP-680
+SiR
+SiR-DNA
+SiR650
+SiR680
+SiR700
+SiR720
+Sodium Green (sodium bound)
+Spark Blue 550
+Spark Violet 538
+Spectrum Orange
+SpyRho
+Sulforhodamine 101
+Super Bright 436
+Super Bright 600
+Super Bright 645
+Super Bright 702
+Super Bright 780
+SynaptoGreen
+SynaptoRed
+T Nuc In-Situ Seq (540 nm Excitation)
+TFCoral
+TFLime
+TMRE
+TO-PRO-1
+TO-PRO-3
+TOTO-1
+TOTO-3
+TQ2
+TQ2WS
+TQ3
+TQ3WS
+TQ4
+TQ4WS
+TQ5WS
+TQ6WS
+TQ7WS
+TRI-COLOR
+TSA Vivid� Fluorophore Kit 570
+TSA Vivid� Fluorophore Kit 650
+Tag-it Violet
+Terbium
+TetraSpeck blue dye
+TetraSpeck orange dye
+Tetramethylrhodamine (TAMRA, TRITC)
+Texas Red
+Thiazole Green (SYBR Green I)
+Thiazole Orange Homodimer (TOTO-1)
+Thiazole Orange Iodide (TO-PRO-1)
+Thiazole Red (TO-PRO-3)
+Thiazole Red Homodimer (TOTO-3)
+ThiolTracker Violet
+Thorlabs FSK1
+Thorlabs FSK2
+Thorlabs FSK2 - Green Fluorescent Microscope slide
+Thorlabs FSK3
+Thorlabs FSK4
+Thorlabs FSK6
+Thorlabs VRC1
+Thorlabs VRC2
+VIC
+ViaFluor 405 Microtubule
+ViaFluor 405 SE Proliferation
+ViaFluor 488 Microtubule
+ViaFluor 488 SE Proliferation
+ViaFluor 647 Microtubule
+Violet membrane asymmetry probe (F2N12S)
+Vybrant DyeCycle Green stain
+Vybrant DyeCycle Orange stain
+Vybrant DyeCycle Ruby stain
+Vybrant DyeCycle Violet stain
+X-Rhod-1 (calcium bound)
+X-Rhod-5F (calcium bound)
+Xylanase substrate
+YO-PRO-1
+YO-PRO-3
+YOYO-1
+YOYO-3
+Yeast vacuole membrane marker (MDY-64)
+Zombie Aqua
+Zombie Green
+Zombie NIR
+Zombie Red
+Zombie UV
+Zombie Violet
+Zombie Yellow
+abberior CAGE 635 (On)
+abberior LIVE 510
+abberior LIVE 590
+abberior STAR 580
+abberior STAR 635
+alamarBlue
+eFluor 450
+eFluor 506
+eFluor 570
+eFluor 615
+eFluor 660
+eFluor 710
+iFluor 350
+iFluor 440
+iFluor 450
+iFluor 488
+iFluor 647
+pHrodo Green
+pHrodo Red
+quinine
+tauroDBD

@@ -1,0 +1,1 @@
+CC1(C2=CC3=[N+](CCCC3=CC2=CC4=C1C=C(C=C4)N(C)C)CCCC(=O)O)C.[O-]Cl(=O)(=O)=O
